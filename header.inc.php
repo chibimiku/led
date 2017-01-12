@@ -60,8 +60,8 @@ echo '</head><body>';
 		<div class="flyout">
 			<ul class="clearfix">
 				<li><a href="/" class=" navlink"><span>Home</span></a></li>
-				<li><a href="/collections/all" class=" navlink"><span>Catalog</span></a></li>
-				<li><a href="/blogs/news" class=" navlink"><span>Blog</span></a></li>
+				<li><a href="list.php" class=" navlink"><span>Catalog</span></a></li>
+				<li><a href="blog.php" class=" navlink"><span>Blog</span></a></li>
 				<li><a href="about.php" class=" current navlink"><span>About Us</span></a></li>
 				<li class="customer-links"><a href="/account/login" id="customer_login_link">Log in</a></li>
 				<li class="customer-links"><a href="/account/register" id="customer_register_link">Create an account</a></li>
@@ -90,8 +90,8 @@ echo '</head><body>';
 				<nav class="main">
 					<ul class="horizontal unstyled clearfix">
 						<li><a href="/" class=""><span>Home</span></a></li>
-						<li><a href="/collections/all" class=""><span>Catalog</span></a></li>
-						<li><a href="/blogs/news" class=""><span>Blog</span></a></li>
+						<li><a href="list.php" class=""><span>Catalog</span></a></li>
+						<li><a href="blog.php" class=""><span>Blog</span></a></li>
 						<li><a href="about.php" class=" current"><span>About Us</span></a></li>
 					</ul>
 				</nav> <!-- /.main -->
