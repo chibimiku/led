@@ -1,6 +1,6 @@
 <?php 
 
-if(!defined('IN_LED'){
+if(!defined('IN_LED')){
 	exit('Access Deined');
 }
 
@@ -14,6 +14,14 @@ function tpl_getlink($k, $v){
 
 function tpl_getcss($url){
 	return tpl_getlink('stylesheet', $url);
+}
+
+function tpl_getlinklist($linklist){
+	$returnstr = '';
+	foreach($linklist as $link){
+		$returnstr = $returnstr.'<a href="'.$link['href'].'">'.$link['content'].'</a>';
+	}
+	return $returnstr;
 }
 
 ?>

@@ -1,12 +1,16 @@
 <?php 
 
-if(!defined('IN_LED'){
+if(!defined('IN_LED')){
 	exit('Access Deined');
 }
 
+//load lib...
+require 'lib/meekrodb.2.3.class.php';
+
 //load configure...
-require 'config.inc.php';
+require 'conf/config.inc.php';
 require 'common.inc.php';
+
 
 //common header here.
 echo '<!DOCTYPE HTML><head>';
