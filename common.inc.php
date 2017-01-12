@@ -26,4 +26,16 @@ function tpl_getlinklist($linklist){
 	return $returnstr;
 }
 
+function tpl_getnavli($navlist, $current){
+	$returnstr = '';
+	foreach($navlist as $k => $v){
+		$currstr = '';
+		if($k == $current){
+			$currstr = 'current';
+		}
+		$returnstr = $returnstr.'<li><a href="'.$v['link'].'" class="'.$currstr.'"><span>'.$v['content'].'</span></a></li>';
+	}
+	return $returnstr;
+}
+
 ?>

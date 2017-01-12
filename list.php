@@ -2,6 +2,8 @@
 
 define ('IN_LED', true);
 
+$modname = 'list';
+
 require ('header.inc.php');
 require ('data/prolist.inc.php');
 

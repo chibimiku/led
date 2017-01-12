@@ -11,6 +11,11 @@ require 'lib/meekrodb.2.3.class.php';
 require 'conf/config.inc.php';
 require 'common.inc.php';
 
+//load nav data
+require 'data/nav.inc.php';
+if(!isset($modname)){
+	$modname = 'home'; //set for default nav.
+}
 
 //common header here.
 echo '<!DOCTYPE HTML><head>';
