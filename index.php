@@ -3,8 +3,11 @@
 define ('IN_LED', true);
 
 require ('header.inc.php');
+require ('data/prolist.inc.php');
 
-foreach($prolist as $pro){
+foreach($prolist as $proid => $pro){
+	//inst id
+	$pro['proid'] = $proid;
 	//image block
 	echo '<div class="product span4"><div class="image"><a href="'.$pro['proid'].'"><img src="'.$pro['image'].'" /></a></div>';
 	//detail block
