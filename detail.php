@@ -131,10 +131,10 @@ if(!$_GET['productid']){
 			<div style="clear:both;"></div>
 		</div>
 	</div>
-	<div style="display:none" id="preloading">
-		<img src="//cdn.shopify.com/s/files/1/0986/0548/products/0902_CCR-2_1024x1024.png?v=1445614990" alt="" />
-		<img src="//cdn.shopify.com/s/files/1/0986/0548/products/0902_CCR-1_1024x1024.png?v=1445614990" alt="" />
-	</div>
+		<div style="display:none" id="preloading">
+			<img src="//cdn.shopify.com/s/files/1/0986/0548/products/0902_CCR-2_1024x1024.png?v=1445614990" alt="" />
+			<img src="//cdn.shopify.com/s/files/1/0986/0548/products/0902_CCR-1_1024x1024.png?v=1445614990" alt="" />
+		</div>
 
   <script>
   var selectCallback = function(variant, selector) {
@@ -165,7 +165,7 @@ if(!$_GET['productid']){
 
   });
   </script>
-</section>
+	</section>
 <!-- End content-->
 
 <?php
