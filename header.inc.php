@@ -36,7 +36,7 @@ echo '</head><body>';
 	<ul class="unstyled">
 		<li class="search-field fl">
 			<form class="search" action="/search">
-				<input type="image" src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/icon-search.png?9800882074587372923" alt="Go" id="go">
+				<input type="image" src="static/images/icon-search.png" alt="Go" id="go">
 				<input type="text" name="q" class="search_box" placeholder="Search" value=""  />
 			</form>
 		</li>
@@ -72,7 +72,7 @@ echo '</head><body>';
 				<li class="customer-links"><a href="/account/register" id="customer_register_link">Create an account</a></li>
 				<li class="search-field">
 				  <form class="search" action="/search" id="search">
-					<input type="image" src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/icon-search.png?9800882074587372923" alt="Go" id="go" class="go" />
+					<input type="image" src="static/images/icon-search.png" alt="Go" id="go" class="go" />
 					<input type="text" name="q" class="search_box" placeholder="Search" value="" />
 				  </form>
 				</li>
@@ -87,17 +87,14 @@ echo '</head><body>';
 	<!-- Begin navigation -->
 		<div class="span12 clearfix">
 			<div class="logo">
-				<h1><a href="/"><img src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/logo.png?9800882074587372923" alt="CCR LED" /></a></h1>
+				<h1><a href="/"><img src="static/images/logo.png" alt="CCR LED" /></a></h1>
 			</div>
         </div>
         <section id="nav" class="row p30">
 			<div class="span12">
 				<nav class="main">
 					<ul class="horizontal unstyled clearfix">
-						<li><a href="/" class=""><span>Home</span></a></li>
-						<li><a href="list.php" class=""><span>Catalog</span></a></li>
-						<li><a href="blog.php" class=""><span>Blog</span></a></li>
-						<li><a href="about.php" class=" current"><span>About Us</span></a></li>
+						<?php echo tpl_getnavli($navlist, $modname);?>
 					</ul>
 				</nav> <!-- /.main -->
 			</div>
