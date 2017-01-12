@@ -1,5 +1,7 @@
 <?php 
 
+//utf-8
+
 if(!defined('IN_LED')){
 	exit('Access Deined');
 }

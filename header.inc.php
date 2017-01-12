@@ -24,4 +24,83 @@ echo tpl_getcss('static/social-buttons.scss.css');
 echo tpl_getcss('static/styles.scss.css');
 echo '</head><body>';
 
+//common header display here.
+?>
+<!-- Begin toolbar -->
+<div class="toolbar-wrapper wrapper"><div class="toolbar span12 clearfix">
+	<ul class="unstyled">
+		<li class="search-field fl">
+			<form class="search" action="/search">
+				<input type="image" src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/icon-search.png?9800882074587372923" alt="Go" id="go">
+				<input type="text" name="q" class="search_box" placeholder="Search" value=""  />
+			</form>
+		</li>
+		<li id="cart-target" class="toolbar-cart ">
+			<a href="/cart" class="cart" title="Shopping Cart">
+				<span class="icon-cart"></span>
+				<span id="cart-count">0</span>
+					Cart
+			</a>
+		</li>
+		<li class="toolbar-customer">
+			<a href="/account/login" id="customer_login_link">Log in</a>
+			<span class="or">or</span>
+			<a href="/account/register" id="customer_register_link">Create an account</a>
+		</li>
+		<li id="menu-toggle" class="menu-icon fl">
+			<i class="fa fa-bars"></i>Menu
+		</li>
+	</ul>
+</div></div>
+<!-- End toolbar -->
+
+<!-- Begin Mobile Nav -->
+<div class="row mobile-nav-wrapper">
+	<nav class="mobile clearfix">
+		<div class="flyout">
+			<ul class="clearfix">
+				<li><a href="/" class=" navlink"><span>Home</span></a></li>
+				<li><a href="/collections/all" class=" navlink"><span>Catalog</span></a></li>
+				<li><a href="/blogs/news" class=" navlink"><span>Blog</span></a></li>
+				<li><a href="/pages/about-us" class=" current navlink"><span>About Us</span></a></li>
+				<li class="customer-links"><a href="/account/login" id="customer_login_link">Log in</a></li>
+				<li class="customer-links"><a href="/account/register" id="customer_register_link">Create an account</a></li>
+				<li class="search-field">
+				  <form class="search" action="/search" id="search">
+					<input type="image" src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/icon-search.png?9800882074587372923" alt="Go" id="go" class="go" />
+					<input type="text" name="q" class="search_box" placeholder="Search" value="" />
+				  </form>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<!-- End Mobile Nav -->
+<!-- Begin wrapper -->
+<div id="transparency" class="wrapper clearfix">
+	<div class="row p0">
+	<!-- Begin navigation -->
+		<div class="span12 clearfix">
+			<div class="logo">
+				<h1><a href="/"><img src="//cdn.shopify.com/s/files/1/0986/0548/t/1/assets/logo.png?9800882074587372923" alt="CCR LED" /></a></h1>
+			</div>
+        </div>
+        <section id="nav" class="row p30">
+			<div class="span12">
+				<nav class="main">
+					<ul class="horizontal unstyled clearfix">
+						<li><a href="/" class=""><span>Home</span></a></li>
+						<li><a href="/collections/all" class=""><span>Catalog</span></a></li>
+						<li><a href="/blogs/news" class=""><span>Blog</span></a></li>
+						<li><a href="/pages/about-us" class=" current"><span>About Us</span></a></li>
+					</ul>
+				</nav> <!-- /.main -->
+			</div>
+		</section>
+<!-- End navigation -->
+<!-- div should be closed in footer-->
+<?php
+
+//Nav end.
+
 ?>
